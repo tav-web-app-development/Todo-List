@@ -107,9 +107,9 @@ const TASKS = [
 ];
 
 const handleInputTextChange = (inputedText) => {
-      const filteredTasks = TASKS.filter(task => {
-      task.name.toLowerCase().indexOf(inputedText.toLowerCase()) !== -1 &&
-      })
-      return filteredTasks;
-}
+  const filteredTasks = TASKS.filter((task) => {
+    task.name.toLowerCase().indexOf(inputedText.toLowerCase()) !== -1;
+  });
+  return filteredTasks;
+};
 ```
