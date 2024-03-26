@@ -106,8 +106,3 @@ const TASKS = [
   },
 ];
 ```
-
-## Extra Credit
-
-1. Allow tasks to be marked complete
-1. Allow tasks be created/edited/deleted
