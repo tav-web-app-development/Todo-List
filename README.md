@@ -2,7 +2,7 @@
 
 1. Clone this repo to your machine, `cd` into the cloned directory, and run `npm create vite@latest .` to install React
 1. Put Visual Studio Code into Full Screen mode (press F11 on the keyboard or go to View > Appearance > Full Screen)
-1. It will have an input element for finding tasks
+1. It will have an input element for finding tasks matching the inputed string
    1. Only matching tasks should be shown when text is entered into the input
 1. It will have a checkbox input that when checked will hide all completed tasks
    1. Completed tasks should be crossed out when shown
@@ -105,4 +105,11 @@ const TASKS = [
     name: "Schedule dentist appointment",
   },
 ];
+
+const handleInputTextChange = (inputedText) => {
+      const filteredTasks = TASKS.filter(task => {
+      task.name.toLowerCase().indexOf(inputedText.toLowerCase()) !== -1 &&
+      })
+      return filteredTasks;
+}
 ```
